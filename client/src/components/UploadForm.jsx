@@ -37,7 +37,7 @@ const UploadForm = ({ onUploadSuccess }) => {
     formData.append('lat', lat);
 
     try {
-      const response = await fetch('http://localhost:5000/api/photos', {
+      const response = await fetch('https://star-map.onrender.com/api/photos', {
         method: 'POST',
         body: formData,
         // 注意：fetch 会自动设置 content-type 为 multipart/form-data，无需手动设置
