@@ -9,7 +9,7 @@ function App() {
 
   const fetchPhotos = async () => {
     try {
-      const response = await fetch('https://star-map.onrender.com/api/photos');
+      const response = await fetch('https://star-map.onrender.com');
       if (response.ok) {
         const data = await response.json();
         setPhotos(data);
